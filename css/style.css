@@ -1,0 +1,73 @@
+.test {
+    border: 2px solid red;
+}
+
+/* opening overlay */
+#overlay{
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+@keyframes overlay-fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.overlay-fade {
+    animation-name: overlay-fade;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+/* end of opening overlay */
+
+/* navbar styling */
+.navbar {
+    background-color: gray;
+}
+/* end of navbar styling */
+
+.logo{
+    height: 150px;
+    width: 150px;
+    position:absolute;
+    top: 0;
+    left: 1.5rem;
+    z-index: 2;
+    background-color: white;
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+}
+
+.stripes-container {
+    height: 20px;
+    width: 90%;
+    position: absolute;
+    top: 130px;
+    left: 10%;
+    z-index: 1;
+    background-color: green;
+}
+
+.home-main{
+    background-image: url(../img/wing.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
