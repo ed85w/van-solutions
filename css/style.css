@@ -1,5 +1,14 @@
 .test {
-    border: 2px solid red;
+    border: 1px solid red;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
+
+/* whole of site styles */
+
+body {
+    background-color: #574a4a;
 }
 
 /* opening overlay */
@@ -15,6 +24,15 @@
     width: 100%;
 }
 
+@-webkit-keyframes overlay-fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes overlay-fade {
     from {
         opacity: 1;
@@ -25,49 +43,196 @@
 }
 
 .overlay-fade {
-    animation-name: overlay-fade;
-    animation-delay: 1s;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: overlay-fade;
+            animation-name: overlay-fade;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 /* end of opening overlay */
 
 /* navbar styling */
 .navbar {
-    background-color: gray;
+    background-color: #574a4a;
+    justify-content: flex-end;
+    padding-right: 0;
+}
+
+.nav-item {
+    border-style: solid;
+    border-width: 0 3px 3px 3px;
+    border-color: transparent;
+}
+
+.nav-item:hover {
+    border-color: orange;
+    background-color: rgba(255,165,0, 0.5)
+}
+
+.nav-link,
+.nav-link:hover {
+    padding-top: 14px;
+    color: white;
 }
 /* end of navbar styling */
 
 .logo{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     position:absolute;
     top: 0;
-    left: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
     z-index: 2;
     background-color: white;
 }
 
 .logo img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 
 .stripes-container {
     height: 20px;
-    width: 90%;
+    width: 100%;
     position: absolute;
-    top: 130px;
-    left: 10%;
+    top: 100px;
+    left: 0;
     z-index: 1;
-    background-color: green;
+    background-color: transparent;
 }
 
-.home-main{
-    background-image: url(../img/wing.jpg);
+.stripes-stripes {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transform: skew(0deg);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #574a4a), color-stop(40%, #574a4a), color-stop(40%, white), color-stop(60%, white), color-stop(60%, orange), color-stop(80%, orange), color-stop(80%, white), to(white));
+    background: linear-gradient(white 0%, white 20%, #574a4a 20%, #574a4a 40%, white 40%, white 60%, orange 60%, orange 80%, white 80%, white 100%)
+}
+
+.stripes-text {
+    display: none;
+}
+
+
+.home-main-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/van.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    height: 500px;
+    background-position: top center;
+    background-size: cover;
+    height: 600px;
     width: 100%;
 }
+
+.home-main-text-holder{
+    height: 600px;
+    width: 100%;
+}
+
+.home-main-text {
+    background-color: #574a4a;
+}
+
+.home-lower-container:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #574a4a;
+}
+
+.home-lower-container {
+    height: 500px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: orange;
+    background-color: yellow;
+
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .logo {
+        height: 150px;
+        width: 150px;
+        position:absolute;
+        top: 0;
+        left: 3rem;
+        transform: translate(0%);
+        z-index: 2;
+        background-color: white;
+    }
+    
+    .logo img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .stripes-container {
+        height: 20px;
+        width: 95%;
+        position: absolute;
+        top: 130px;
+        left: 5%;
+        z-index: 1;
+        background-color: transparent;
+    }
+
+    .stripes-stripes {
+        display: inline-block;
+        height: 100%;
+        width: 68%;
+        transform: skew(20deg);
+        background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #574a4a), color-stop(40%, #574a4a), color-stop(40%, white), color-stop(60%, white), color-stop(60%, orange), color-stop(80%, orange), color-stop(80%, white), to(white));
+        background: linear-gradient(white 0%, white 20%, #574a4a 20%, #574a4a 40%, white 40%, white 60%, orange 60%, orange 80%, white 80%, white 100%)
+    }
+    
+    .stripes-text {
+        display: inline-block;
+        height: 100%;
+        width: 31%;
+        transform: skew(20deg);
+        background-color: white;
+    }
+
+    .stripes-text:after{
+        content: "";
+        position: absolute;
+        right: -3%;
+        height: 100%;
+        width: 5%;
+        transform: skew(-20deg);
+        background-color: white;
+    }
+    
+    .stripes-text span {
+        display: inline-block;
+        transform: skew(-20deg);
+    }
+
+}
+
+
+
+/* // Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
