@@ -8,7 +8,7 @@ No media query since this is the default in Bootstrap */
 /* whole of site styles */
 
 body {
-    background-color: #574a4a;
+    background-color: #585858;
 }
 
 /* opening overlay */
@@ -57,28 +57,146 @@ body {
 /* end of opening overlay */
 
 /* navbar styling */
-.navbar {
-    background-color: #574a4a;
-    justify-content: flex-end;
-    padding-right: 0;
+
+/* sidebar (mobile) */
+.sidebar {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0; 			
+    background: #585858;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
-.nav-item {
+.sidebar-show {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+  
+ul {
+    margin: 0;
+    padding: 0;
+}
+  
+ul.sidebar-nav li {
+    padding: 10px 20px;
+    border-width: 0 2px 2px 2px;
     border-style: solid;
-    border-width: 0 3px 3px 3px;
     border-color: transparent;
+    display: block;
+    text-decoration: none;
+}
+  
+ul.sidebar-nav {
+    padding-top: 20px;
+}
+  
+ul.sidebar-nav li:active,
+ul.sidebar-nav li:hover,
+.active {
+/* border-color: #ff6c00;
+background-color: rgba(155, 81, 21, 0.3) */
 }
 
-.nav-item:hover {
-    border-color: orange;
-    background-color: rgba(255,165,0, 0.5)
+ul.sidebar-nav li a {
+    color: #ffffff;
+    background: transparent;
 }
 
-.nav-link,
-.nav-link:hover {
-    padding-top: 14px;
-    color: white;
+ul.sidebar-nav li a:hover {
+    text-decoration: none;
 }
+ 
+/* 'burger' */
+.sidebarBtn {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background:none;
+    border-width: 0px 0px 2px 2px;
+    border-style: solid;
+    border-color: #ff6c00;
+    background-color: rgba(255, 108, 0, 0.3);
+    outline: none;
+    padding-left: 5px;
+}
+
+.sidebarBtn:focus {
+    outline: none;
+}
+
+.sidebarBtn span {
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background: white;
+    position: absolute;
+    top: 17px;
+    transition: .3s;
+    -o-transition: .3s;
+}
+
+.sidebarBtn span:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background: white;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+}
+
+.sidebarBtn span:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background: white;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+}
+
+.sidebarBtn.toggle{
+    transition: 0.3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+}
+
+.sidebarBtn.toggle span {
+    background: transparent;
+}
+
+.sidebarBtn.toggle span:before {
+    top: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.sidebarBtn.toggle span:after {
+    top: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+/* end of 'burger' */
 /* end of navbar styling */
 
 .logo{
@@ -88,7 +206,7 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    z-index: -1;
+    z-index: 0;
     background-color: white;
 }
 
@@ -107,7 +225,7 @@ body {
     position: absolute;
     top: 100px;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     background-color: transparent;
 }
 
@@ -116,14 +234,17 @@ body {
     height: 100%;
     width: 100%;
     transform: skew(0deg);
-    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #574a4a), color-stop(40%, #574a4a), color-stop(40%, white), color-stop(60%, white), color-stop(60%, orange), color-stop(80%, orange), color-stop(80%, white), to(white));
-    background: linear-gradient(white 0%, white 20%, #574a4a 20%, #574a4a 40%, white 40%, white 60%, orange 60%, orange 80%, white 80%, white 100%)
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #585858), color-stop(40%, #585858), color-stop(40%, white), color-stop(60%, white), color-stop(60%, #ff6c00), color-stop(80%, #ff6c00), color-stop(80%, white), to(white));
+    background: linear-gradient(white 0%, white 20%, #585858 20%, #585858 40%, white 40%, white 60%, #ff6c00 60%, #ff6c00 80%, white 80%, white 100%)
 }
 
 .stripes-text {
     display: none;
 }
 
+.home-main-div {
+    margin-top: 120px;
+}
 
 .home-main-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/van.jpg);
@@ -140,7 +261,7 @@ body {
 }
 
 .home-main-text {
-    background-color: #574a4a;
+    background-color: #585858;
 }
 
 .home-lower-container:before {
@@ -153,25 +274,70 @@ body {
     height: 0; 
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-top: 40px solid #574a4a;
+    border-top: 40px solid #585858;
 }
 
 .home-lower-container {
     height: 500px;
     border-style: solid;
     border-width: 15px;
-    border-color: orange;
+    border-color: #ff6c00;
     background-color: yellow;
-
 }
-
-
 
 /* Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 576px) { ... } */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+/* navbar */
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        display: inline-block;
+        position: static;
+        left: auto;
+        text-align: center;
+        float: none;
+        vertical-align: top;
+        padding: 0 3rem 0 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    
+    nav {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    ul.sidebar-nav li {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        list-style: none;
+        display: inline-block;
+    }
+
+    ul.sidebar-nav li:active,
+    ul.sidebar-nav li:hover,
+    .active {
+        border-color: #ff6c00;
+        background-color: rgba(155, 81, 21, 0.6)
+    }
+
+    ul.sidebar-nav {
+        float: right;
+        padding-top: 0;
+    }
+
+    .sidebarBtn {
+        display: none;
+    }
+    /* end of navbar */
 
     .logo {
         height: 150px;
@@ -183,7 +349,7 @@ body {
         z-index: 2;
         background-color: white;
     }
-    
+
     .logo img {
         height: 150px;
         width: 150px;
@@ -191,44 +357,48 @@ body {
 
     .stripes-container {
         height: 20px;
-        width: 95%;
+        width: 100%;
+        max-width: 100%;
         position: absolute;
         top: 130px;
-        left: 5%;
         z-index: 1;
         background-color: transparent;
     }
 
     .stripes-stripes {
         display: inline-block;
+        margin-left: 7%;
         height: 100%;
-        width: 68%;
+        width: 66%;
         transform: skew(20deg);
-        background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #574a4a), color-stop(40%, #574a4a), color-stop(40%, white), color-stop(60%, white), color-stop(60%, orange), color-stop(80%, orange), color-stop(80%, white), to(white));
-        background: linear-gradient(white 0%, white 20%, #574a4a 20%, #574a4a 40%, white 40%, white 60%, orange 60%, orange 80%, white 80%, white 100%)
+        background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #585858), color-stop(40%, #585858), color-stop(40%, white), color-stop(60%, white), color-stop(60%, #ff6c00), color-stop(80%, #ff6c00), color-stop(80%, white), to(white));
+        background: linear-gradient(white 0%, white 20%, #585858 20%, #585858 40%, white 40%, white 60%, #ff6c00 60%, #ff6c00 80%, white 80%, white 100%)
     }
-    
+
     .stripes-text {
         display: inline-block;
         height: 100%;
-        width: 31%;
+        width: 25%;
         transform: skew(20deg);
         background-color: white;
     }
 
-    .stripes-text:after{
-        content: "";
+    .stripes-fill {
+        display: inline-block;
         position: absolute;
-        right: -3%;
+        right: 0;
         height: 100%;
-        width: 5%;
-        transform: skew(-20deg);
+        width: 2%;
         background-color: white;
     }
-    
+
     .stripes-text span {
         display: inline-block;
         transform: skew(-20deg);
+    }
+
+    .home-main-div {
+        margin-top: 0px;
     }
 
 }
