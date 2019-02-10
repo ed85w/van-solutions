@@ -20,6 +20,10 @@ span.orange-header {
     color: #ff6c00;
 }
 
+span.grey {
+    color: #3f3f3f
+}
+
 p{
     color: white;
     font-size: 0.8rem;
@@ -30,6 +34,10 @@ button.btn {
     color: white;
     border: 1px solid #ff6c00;
     margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
 }
 
 /* opening overlay */
@@ -220,6 +228,8 @@ ul.sidebar-nav li a:hover {
 /* end of 'burger' */
 /* end of navbar styling */
 
+/* home page */
+
 .logo{
     box-sizing: border-box;
     height: 100px;
@@ -287,7 +297,6 @@ ul.sidebar-nav li a:hover {
     background-color: #585858;
 }
 
-
 .home-lower-container {
     height: 500px;
     border-style: solid;
@@ -307,6 +316,10 @@ ul.sidebar-nav li a:hover {
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-top: 40px solid #585858;
+}
+
+.home-lower-img img{
+    height: 250px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -367,6 +380,7 @@ ul.sidebar-nav li a:hover {
     }
     /* end of navbar */
 
+    /* home page */
     .logo {
         height: 150px;
         width: 150px;
@@ -430,6 +444,18 @@ ul.sidebar-nav li a:hover {
 
     .home-main-text-holder{
          height: 500px       /* same as .home-main-image! */
+    }
+
+    .home-imgs-row img {
+        height: 20vw;
+    }
+
+    .home-imgs-row :first-child{
+        padding-left:0;
+    }
+
+    .home-imgs-row :last-child {
+        padding-right: 0;
     }
 
 }
