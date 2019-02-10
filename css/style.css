@@ -11,6 +11,27 @@ body {
     background-color: #585858;
 }
 
+h5 {
+    color: white;
+    font-size: 1rem;
+}
+
+span.orange-header {
+    color: #ff6c00;
+}
+
+p{
+    color: white;
+    font-size: 0.8rem;
+}
+
+button.btn {
+    background-color: #ff6a00b0;
+    color: white;
+    border: 1px solid #ff6c00;
+    margin-bottom: 20px;
+}
+
 /* opening overlay */
 #overlay{
     position: fixed;
@@ -19,7 +40,7 @@ body {
     background-image: url(../img/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     height: 100vh;
     width: 100%;
 }
@@ -61,6 +82,7 @@ body {
 /* sidebar (mobile) */
 .sidebar {
     visibility: hidden;
+    opacity: 0;
     position: fixed;
     top: 0;
     left: 0; 			
@@ -68,7 +90,6 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
 }
 
@@ -98,9 +119,9 @@ ul.sidebar-nav {
   
 ul.sidebar-nav li:active,
 ul.sidebar-nav li:hover,
-.active {
-/* border-color: #ff6c00;
-background-color: rgba(155, 81, 21, 0.3) */
+ul.sidebar-nav li.active {
+    border-color: transparent;
+    background-color: transparent;
 }
 
 ul.sidebar-nav li a {
@@ -200,8 +221,10 @@ ul.sidebar-nav li a:hover {
 /* end of navbar styling */
 
 .logo{
+    box-sizing: border-box;
     height: 100px;
     width: 100px;
+    padding: 7px 7px 7px 7px;   
     position:absolute;
     top: 0;
     left: 50%;
@@ -211,8 +234,8 @@ ul.sidebar-nav li a:hover {
 }
 
 .logo img {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
 }
 
 .home-main {
@@ -247,11 +270,11 @@ ul.sidebar-nav li a:hover {
 }
 
 .home-main-image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/van.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/placeholder.png);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 200px;
     width: 100%;
 }
 
@@ -264,10 +287,19 @@ ul.sidebar-nav li a:hover {
     background-color: #585858;
 }
 
+
+.home-lower-container {
+    height: 500px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #ff6c00;
+    background-color: #f19664;
+}
+
 .home-lower-container:before {
     content: "";
     position: absolute;
-    top: -15px;
+    top: -18px;
     left: 50%;
     transform: translate(-50%);
     width: 0; 
@@ -277,30 +309,26 @@ ul.sidebar-nav li a:hover {
     border-top: 40px solid #585858;
 }
 
-.home-lower-container {
-    height: 500px;
-    border-style: solid;
-    border-width: 15px;
-    border-color: #ff6c00;
-    background-color: yellow;
-}
-
 /* Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 576px) { ... } */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-/* navbar */
+    /* whole site settings */
+    button.btn{
+        margin-bottom: 0px;
+    }
+
+    /* navbar */
 
     .sidebar {
-        width: 100%;
-        height: auto;
         visibility: visible;
         opacity: 1;
-        display: inline-block;
         position: static;
         left: auto;
+        height: auto;
+        display: inline-block;
         text-align: center;
         float: none;
         vertical-align: top;
@@ -324,7 +352,7 @@ ul.sidebar-nav li a:hover {
 
     ul.sidebar-nav li:active,
     ul.sidebar-nav li:hover,
-    .active {
+    ul.sidebar-nav li.active {
         border-color: #ff6c00;
         background-color: rgba(155, 81, 21, 0.6)
     }
@@ -348,11 +376,6 @@ ul.sidebar-nav li a:hover {
         transform: translate(0%);
         z-index: 2;
         background-color: white;
-    }
-
-    .logo img {
-        height: 150px;
-        width: 150px;
     }
 
     .stripes-container {
@@ -401,12 +424,30 @@ ul.sidebar-nav li a:hover {
         margin-top: 0px;
     }
 
+    .home-main-image{
+        height: 500px;
+    }
+
+    .home-main-text-holder{
+         height: 500px       /* same as .home-main-image! */
+    }
+
 }
 
 
 
-/* // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+        /* whole of site settings */
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
+        h5{
+            font-size: 1.2rem;
+        }
+    
+        p{
+            font-size: 1rem;
+        }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... }  */
