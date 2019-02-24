@@ -270,11 +270,12 @@ ul.sidebar-nav li a:hover {
 }
 
 .lower-container {
-    height: 500px;
+    /* height: 500px; */
     border-style: solid;
     border-width: 15px;
     border-color: #ed6c1d;
     background-color: #f19664;
+    padding-bottom: 15px;
 }
 
 .lower-container::before,
@@ -392,6 +393,11 @@ ul.sidebar-nav li a:hover {
     height: 200px;
 }
 
+.services-list {
+    color: white;
+    line-height: 2;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 576px) { ... } */
@@ -467,11 +473,11 @@ ul.sidebar-nav li a:hover {
     }
 
     .stripes-container {
-        height: 20px;
+        height: 30px;
         width: 100%;
         max-width: 100%;
         position: absolute;
-        top: 130px;
+        top: 120px;
         z-index: 1;
         background-color: transparent;
     }
@@ -499,14 +505,14 @@ ul.sidebar-nav li a:hover {
         position: absolute;
         right: 0;
         height: 100%;
-        width: 2%;
+        width: 4%;
         background-color: white;
     }
 
     .stripes-text span.van-text {
         position: absolute;
         left: 5px;
-        top: -3px;
+        top: 0;
         display: inline-block;
         transform: skew(-20deg);
         color: #595959;
@@ -514,8 +520,8 @@ ul.sidebar-nav li a:hover {
     }
     .stripes-text span.solutions-text {
         position: absolute;
-        left: 35px;
-        top: -3px;
+        left: 49px;
+        top: 0;
         display: inline-block;
         transform: skew(-20deg);
         color: #ed6c1d;
@@ -599,6 +605,11 @@ ul.sidebar-nav li a:hover {
         width: 100%;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    /* SERVICES PAGE */
+    .service-main-img {
+        height: 400px;
     }
 
 
