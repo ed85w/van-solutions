@@ -1,16 +1,12 @@
-.test {
-    border: 1px solid red;
-}
+
 
 /* Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap */
 
 /* whole of site styles */
-*{
-    font-family: 'Didact Gothic', sans-serif;
-}
 
 body {
+    font-family: 'Didact Gothic', 'Arial', sans-serif;
     background-color: #595959;
 }
 
@@ -57,6 +53,13 @@ img {
     width: 100%;
 }
 
+.bg-grey-orange {
+    background: linear-gradient(#595959 0%, #595959 50%, #ed6c1d 50%, #ed6c1d 100%);
+}
+.bg-orange-grey {
+    background: linear-gradient(#ed6c1d 0%, #ed6c1d 50%, #595959 50%, #595959 100%);   
+}
+
 /* navbar styling */
 
 /* sidebar (mobile) */
@@ -96,6 +99,8 @@ ul.sidebar-nav li a{
     border-color: transparent;
     display: block;
     text-decoration: none;
+    text-transform: uppercase;
+    transition: 0s;
 }
 ul.sidebar-nav li a:active,
 ul.sidebar-nav li a:hover,
@@ -396,6 +401,16 @@ ul.sidebar-nav li a:hover {
 .services-list {
     color: white;
     line-height: 2;
+    text-transform: capitalize;
+}
+
+.orange-triangle::before,
+.orange-triangle::after {
+    top: -16px;
+}
+
+.orange-triangle::after{
+    border-top-color: #fa9a55;
 }
 
 
@@ -520,7 +535,7 @@ ul.sidebar-nav li a:hover {
     }
     .stripes-text span.solutions-text {
         position: absolute;
-        left: 49px;
+        left: 50px;
         top: 0;
         display: inline-block;
         transform: skew(-20deg);
