@@ -72,7 +72,10 @@
 
     <!-- logo image -->
     <div class="logo">
-      <img src="./img/logo.png" alt="van solutions ltd logo">
+      <!-- logo on small screens -->
+      <img src="./img/logo-full.png" alt="van solutions ltd logo" class="d-block d-md-none">
+      <!-- logo on med+ screens -->
+      <img src="./img/logo-no-txt.png" alt="van solutions ltd logo" class="d-none d-md-block">
     </div>
 
     <!-- stripes -->
@@ -130,11 +133,27 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <div class="row">
         <div class="stripes-stripes-bottom"></div>
       </div>
-    </div>
+    </div> -->
+
+    <footer class="grey-footer">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-2 footer-logo">
+              <img src="./img/logo-orange.png" alt="van solutions logo in orange">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-4 text-center">
+              <h4>0113 3720014</h4>
+              <h4>info@vansolutionsltd.co.uk</h4>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

@@ -72,7 +72,10 @@
 
     <!-- logo image -->
     <div class="logo">
-      <img src="./img/logo.png" alt="van solutions ltd logo">
+      <!-- logo on small screens -->
+      <img src="./img/logo-full.png" alt="van solutions ltd logo" class="d-block d-md-none">
+      <!-- logo on med+ screens -->
+      <img src="./img/logo-no-txt.png" alt="van solutions ltd logo" class="d-none d-md-block">
     </div>
 
     <!-- stripes -->
@@ -91,8 +94,7 @@
 
     <!-- page content -->
     <section class="container-fluid service-main-div">
-      <div class="row mb-md-4 pr-md-4 pl-md-4">
-
+      <div class="row  pr-md-4 pl-md-4 contact-row">
         <div class="col-sm-12 col-md-6 order-md-2 pt-4 pt-md-0">
           <div class="col-12">
             <h4 class="orange-text font-weight-bold">CONTACT US:</h4>
@@ -125,36 +127,40 @@
           <!-- contact form (uses formspree) -->
           <form method="POST" action="https://formspree.io/ed.walker@hotmail.co.uk">
 
-            <div class="form-group">
-              <label for="name">Name *</label>
-              <input type="text" class="form-control" id="name" name="name" required/>
-            </div>
+            <div class="container">
+              <div class="row">
+
+                <div class="form-group col-12 col-md-4">
+                  <label for="name">Name *</label>
+                  <input type="text" class="form-control" id="name" name="name" required/>
+                </div>
             
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" class="form-control" id="email" name="email" required />
-            </div>
+                <div class="form-group col-12 col-md-8">
+                  <label for="email">Email *</label>
+                  <input type="email" class="form-control" id="email" name="email" required />
+                </div>
 
-            <div class="form-group">
-                <label for="company_name">Company Name *</label>
-                <input type="text" class="form-control" id="company_name" name="company_name" required/>
+                <div class="form-group col-12 col-md-4">
+                  <label for="company_name">Company Name *</label>
+                  <input type="text" class="form-control" id="company_name" name="company_name" required/>
+                </div>
+
+                <div class="form-group col-12 col-md-8">
+                  <label for="phone">Contact Number</label>
+                  <input type="text" class="form-control" id="phone" name="phone"/>
+                </div>
+
+                <div class="form-group col-12">
+                  <label for="enquiry">Enquiry</label>
+                  <textarea class="form-control" id="enquiry" name="enquiry"></textarea>
+                </div>
+                  
+                <button type="submit" class="btn">Submit</button>
+                <br>
+                <h5>GDPR</h5>
+
               </div>
-
-            <div class="form-group">
-              <label for="phone">Contact Number</label>
-              <input type="text" class="form-control" id="phone" name="phone"/>
             </div>
-
-            <div class="form-group">
-              <label for="enquiry">Enquiry</label>
-              <textarea class="form-control" id="enquiry" name="enquiry"></textarea>
-            </div>
-              
-            <button type="submit" class="btn">Send</button>
-
-            <br>
-            <p>GDPR</p>
-
           </form>
         </div>
 
@@ -169,10 +175,23 @@
         </div>
 
       </div>
+    </section>
 
-
-    </div>
-  </section>
+    <footer class="orange-footer">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-2 footer-logo">
+              <img src="./img/logo-grey.png" alt="van solutions logo in grey">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-4 text-center">
+              <h4>0113 3720014</h4>
+              <h4>info@vansolutionsltd.co.uk</h4>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <!-- Map JS -->
     <script src="js/map.js"></script>

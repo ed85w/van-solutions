@@ -5,23 +5,24 @@ No media query since this is the default in Bootstrap */
 
 /* whole of site styles */
 @font-face {
-    font-family: Didact Gothic;
+    font-family: DidactGothic;
     src: url('../fonts/DidactGothic-Regular.woff');
     src: local('../fonts/DidactGothic-Regular.woff')
 }
 
 body {
-    font-family: 'Didact Gothic', 'Arial', sans-serif;
+    font-family: 'DidactGothic', 'Arial', sans-serif;
+    font-size: 14px;
     background-color: #595959;
 }
 
 p,h1,h2,h3,h4,h5 {
-    font-family: 'Didact Gothic', 'Arial', sans-serif; 
+    font-family: 'DidactGothic', 'Arial', sans-serif; 
 }
 
 h5 {
     color: white;
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .orange-text {
@@ -34,7 +35,7 @@ h5 {
 
 p{
     color: white;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
 }
 
 .btn {
@@ -91,10 +92,8 @@ img {
     visibility: visible;
     opacity: 1;
     width: 100%;    
-    transition: .8s;
-    -webkit-transition: 0.8s;
-    /* -webkit-transition: visibility 0s, opacity 0.5s linear;
-    transition: visibility 0s, opacity 0.5s linear; */
+    transition: .5s;
+    -webkit-transition: 0.5s;
 }
   
 ul {
@@ -438,13 +437,31 @@ ul.sidebar-nav li a:hover {
 }
 
 .orange-triangle::after{
-    border-top-color: #fa9a55;
+    border-top-color: #f19664;
 }
 
 /* CONTACT PAGE */
 
+.contact-row {
+    background: linear-gradient(#595959 0%, #595959 75%, #ed6c1d 75%, #ed6c1d 100%);
+}
+
 #map {
     height: 300px;
+}
+
+/* FOOTERS */
+
+footer{
+    color: white;
+    padding-top: 15px;
+}
+
+.orange-footer {
+    background-color: #ed6c1d;
+}
+.grey-footer {
+    background-color: #595959;
 }
 
 
@@ -682,11 +699,11 @@ ul.sidebar-nav li a:hover {
         /* whole of site settings */
 
         h5{
-            font-size: 1.2rem;
+            /* font-size: 1.2rem; */
         }
     
         p{
-            font-size: 1rem;
+            /* font-size: 1rem; */
         }
 }
 

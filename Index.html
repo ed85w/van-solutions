@@ -70,7 +70,10 @@
 
     <!-- logo image -->
     <div class="logo">
-      <img src="./img/logo.png" alt="van solutions ltd logo">
+      <!-- logo on small screens -->
+      <img src="./img/logo-full.png" alt="van solutions ltd logo" class="d-block d-md-none">
+      <!-- logo on med+ screens -->
+      <img src="./img/logo-no-txt.png" alt="van solutions ltd logo" class="d-none d-md-block">
     </div>
 
     <!-- stripes -->
@@ -110,8 +113,8 @@
         </div>
       </div>
 
-      <div class="row pl-sm-0 pr-sm-0 pr-md-4 pl-md-4">
-        <div class="col-12 lower-container">
+      <div class="row pl-sm-0 pr-sm-0 pr-md-4 pl-md-4 bg-grey-orange">
+        <div class="col-12 lower-container pb-0">
           <div class="row pt-5">
             <div class="col-sm-12 col-md-6 pr-md-5">
               <p>Whether you're looking to have your Van serviced, obtain a particular part, or have a troublesome an issue you would like advice on please <span class="grey-text">get in touch</span> and we will be happy to see how we can assist your business.</p>
@@ -129,6 +132,22 @@
         </div>
       </div>
     </div>
+
+    <footer class="orange-footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-2 footer-logo">
+            <img src="./img/logo-grey.png" alt="van solutions logo in grey">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4 text-center">
+            <h4>0113 3720014</h4>
+            <h4>info@vansolutionsltd.co.uk</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
