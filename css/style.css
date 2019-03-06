@@ -4,25 +4,19 @@
 No media query since this is the default in Bootstrap */
 
 /* whole of site styles */
-@font-face {
-    font-family: DidactGothic;
-    src: url('../fonts/DidactGothic-Regular.woff');
-    src: local('../fonts/DidactGothic-Regular.woff')
-}
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 body {
-    font-family: 'DidactGothic', 'Arial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     background-color: #595959;
 }
 
-p,h1,h2,h3,h4,h5 {
-    font-family: 'DidactGothic', 'Arial', sans-serif; 
-}
-
 h5 {
     color: white;
-    /* font-size: 1rem; */
+    line-height: 27px;
 }
 
 .orange-text {
@@ -84,7 +78,7 @@ img {
     background: #595959;
     width: 100%;
     height: 100%;
-    z-index: 5;
+    z-index: 1;
     
 }
 
@@ -140,8 +134,8 @@ ul.sidebar-nav li a:hover {
     z-index: 2;
     top: 0;
     right: 0;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     cursor: pointer;
@@ -160,11 +154,11 @@ ul.sidebar-nav li a:hover {
 
 .sidebarBtn span {
     display: block;
-    width: 25px;
-    height: 1.5px;
+    width: 38px;
+    height: 2px;
     background: white;
     position: absolute;
-    top: 17px;
+    top: 24px;
     -webkit-transition: .3s;
     transition: .3s;
     -o-transition: .3s;
@@ -173,10 +167,10 @@ ul.sidebar-nav li a:hover {
 .sidebarBtn span:before {
     content: '';
     position: absolute;
-    top: -8px;
+    top: -10px;
     left: 0;
     width: 100%;
-    height: 1.5px;
+    height: 2px;
     background: white;
     transition: .3s;
     -webkit-transition: .3s;
@@ -186,10 +180,10 @@ ul.sidebar-nav li a:hover {
 .sidebarBtn span:after {
     content: '';
     position: absolute;
-    top: 8px;
+    top: 10px;
     left: 0;
     width: 100%;
-    height: 1.5px;
+    height: 2px;
     background: white;
     transition: .3s;
     -webkit-transition: .3s;
@@ -228,8 +222,8 @@ ul.sidebar-nav li a:hover {
 .logo{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    height: 100px;
     width: 100px;
+    height: 100px;
     padding: 7px 7px 7px 7px;   
     position:absolute;
     top: 0;
@@ -464,6 +458,10 @@ footer{
     background-color: #595959;
 }
 
+.footer-link {
+    color: white;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 576px) { ... } */
@@ -528,8 +526,8 @@ footer{
 
     /* home page */
     .logo {
-        height: 150px;
-        width: 150px;
+        width: 164px;
+        height: 141px;
         position:absolute;
         top: 0;
         left: 3rem;
@@ -544,7 +542,7 @@ footer{
         width: 100%;
         max-width: 100%;
         position: absolute;
-        top: 120px;
+        top: 110px;
         z-index: 1;
         background-color: transparent;
     }
@@ -604,11 +602,11 @@ footer{
     }
 
     .home-main-image{
-        height: 500px;
+        height: 600px;
     }
 
     .home-main-text-holder{
-         height: 500px       /* same as .home-main-image! */
+         height: 600px       /* same as .home-main-image! */
     }
 
     .home-imgs-row img {
