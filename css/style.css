@@ -81,7 +81,7 @@ img {
     background: #595959;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 3;
     
 }
 
@@ -134,7 +134,7 @@ ul.sidebar-nav li a:hover {
 .sidebarBtn {
     display: block;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     right: 0;
     width: 50px;
@@ -542,11 +542,11 @@ footer{
     }
 
     .stripes-container {
-        height: 30px;
+        height: 25px;
         width: 100%;
         max-width: 100%;
         position: absolute;
-        top: 110px;
+        top: 115px;
         z-index: 1;
         background-color: transparent;
     }
@@ -583,7 +583,7 @@ footer{
     .stripes-text span.van-text {
         position: absolute;
         left: 5px;
-        top: 0;
+        top: -1px;
         display: inline-block;
         -webkit-transform: skew(-20deg);
                 transform: skew(-20deg);
@@ -592,8 +592,8 @@ footer{
     }
     .stripes-text span.solutions-text {
         position: absolute;
-        left: 50px;
-        top: 0;
+        left: 48px;
+        top: -1px;
         display: inline-block;
         -webkit-transform: skew(-20deg);
                 transform: skew(-20deg);
