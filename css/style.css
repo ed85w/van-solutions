@@ -10,7 +10,7 @@ No media query since this is the default in Bootstrap */
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
+    /* font-size: 14px; */
     background-color: #595959;
 }
 
@@ -25,6 +25,9 @@ h5 {
 
 .grey-text {
     color: #595959;
+}
+.white-text{
+    color: white;
 }
 
 p{
@@ -501,8 +504,9 @@ footer{
         list-style: none;
         display: inline-block;
     }
-
+    
     ul.sidebar-nav li a {
+        font-size: 15px;
         padding: 10px 20px;
         margin-bottom: 10px;  
     }
@@ -702,6 +706,11 @@ footer{
     
         p{
             /* font-size: 1rem; */
+        }
+
+        /* navbar */
+        ul.sidebar-nav li a {
+            font-size: 17px; 
         }
 }
 

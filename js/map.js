@@ -2,7 +2,7 @@
 function initMap() {
 
   // The location of tinyStompers
-  var vanSolutions = {lat: 54.024630, lng: -1.157781};
+  var vanSolutions = {lat: 53.783418, lng: -1.579818};
 
   // Map options
   var options = {
