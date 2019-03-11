@@ -443,6 +443,10 @@ ul.sidebar-nav li a:hover {
     background: linear-gradient(#595959 0%, #595959 75%, #ed6c1d 75%, #ed6c1d 100%);
 }
 
+.contact-address {
+    background: #595959;
+}
+
 #map {
     height: 300px;
 }
