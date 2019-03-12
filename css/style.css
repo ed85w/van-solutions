@@ -5,12 +5,14 @@ No media query since this is the default in Bootstrap */
 
 /* whole of site styles */
 
-
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@font-face{
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-Regular.woff) format(woff);
+    src: url(../fonts/Ubuntu-Regular.ttf) format(truetype);
+}
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    /* font-size: 14px; */
     background-color: #595959;
 }
 
@@ -24,7 +26,7 @@ h5 {
 }
 
 .grey-text {
-    color: #595959;
+    color: #383838;
 }
 .white-text{
     color: white;
@@ -89,6 +91,7 @@ img {
     visibility: visible;
     opacity: 1;
     width: 100%;    
+    -webkit-transition: .5s;    
     transition: .5s;
     -webkit-transition: 0.5s;
 }
@@ -280,7 +283,7 @@ ul.sidebar-nav li a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 200px;
+    height: 45vw;
     width: 100%;
 }
 
@@ -424,8 +427,12 @@ ul.sidebar-nav li a:hover {
 
 .services-list {
     color: white;
-    line-height: 2;
+    line-height: 1.25;
     text-transform: capitalize;
+}
+
+.services-list li {
+    padding-bottom: 5px;
 }
 
 .orange-triangle::before,
@@ -440,6 +447,7 @@ ul.sidebar-nav li a:hover {
 /* CONTACT PAGE */
 
 .contact-row {
+    background: -webkit-gradient(linear, left top, left bottom, from(#595959), color-stop(75%, #595959), color-stop(75%, #ed6c1d), to(#ed6c1d));
     background: linear-gradient(#595959 0%, #595959 75%, #ed6c1d 75%, #ed6c1d 100%);
 }
 
