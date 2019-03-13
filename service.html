@@ -29,6 +29,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <!-- animate on scroll css -->
+    <link rel="stylesheet" href="./css/aos.css" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -105,7 +108,7 @@
       </div>
 
       <div class="row pl-sm-0 pr-sm-0 pr-md-4 pl-md-4 bg-grey-orange">
-        <div class="col-12 col-lg-8 offset-lg-2 lower-container">
+        <div class="col-12 col-lg-8 offset-lg-2 lower-container" data-aos="fade-up">
           <div class="row pt-5">
             <div class="col-sm-12">
               <h4 class="orange-text font-weight-bold">OUR SERVICES INCLUDE:</h4>
@@ -157,11 +160,19 @@
   </footer>
 
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- initialise animate on scroll -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
 
   </body>
 </html>

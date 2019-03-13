@@ -71,6 +71,18 @@ img {
     background: linear-gradient(#ed6c1d 0%, #ed6c1d 50%, #595959 50%, #595959 100%);   
 }
 
+/* cookie consent button */
+.cc-floating .cc-compliance>.cc-btn,
+.cc-floating .cc-compliance>.cc-btn:hover,
+.cc-floating .cc-compliance>.cc-btn:focus {
+    background: #ed6c1d;
+}
+a.cc-btn.cc-dismiss,
+a.cc-btn.cc-dismiss:hover,
+a.cc-btn.cc-dismiss:focus {
+    background: #ed6c1d;
+}
+
 /* navbar styling */
 
 /* sidebar (mobile) */
