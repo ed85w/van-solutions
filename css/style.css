@@ -311,10 +311,10 @@ ul.sidebar-nav li a:hover {
 
 .home-main-text {
     background-color: #595959;
+    opacity: 0.9;
 }
 
 .lower-container {
-    /* height: 500px; */
     border-style: solid;
     border-width: 15px;
     border-color: #ed6c1d;
@@ -413,13 +413,13 @@ ul.sidebar-nav li a:hover {
     border-bottom:0px;
 }
 
-.stripes-stripes-bottom {
+/* .stripes-stripes-bottom {
     width: 100%;
     height: 20px;
     margin-top: 20px;
     background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #595959), color-stop(40%, #595959), color-stop(40%, white), color-stop(60%, white), color-stop(60%, #ed6c1d), color-stop(80%, #ed6c1d), color-stop(80%, white), to(white));
     background: linear-gradient(white 0%, white 20%, #595959 20%, #595959 40%, white 40%, white 60%, #ed6c1d 60%, #ed6c1d 80%, white 80%, white 100%)
-}
+} */
 
 .about-text {
     position: initial;
@@ -443,7 +443,7 @@ ul.sidebar-nav li a:hover {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 200px;
+    height: 50vw;
 }
 
 .services-list {
@@ -463,6 +463,16 @@ ul.sidebar-nav li a:hover {
 
 .orange-triangle::after{
     border-top-color: #f19664;
+}
+
+/* SECURITY PAGE */
+.security-main-img {
+    background-image: url(../img/ups-van1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
 }
 
 /* CONTACT PAGE */
@@ -735,6 +745,10 @@ a.footer-link:hover{
         height: 400px;
     }
 
+    /* SECURITY PAGE */
+    .security-main-img {
+        height: 300px;
+    }
 
 
 }
