@@ -77,6 +77,7 @@ img {
 }
 
 .bg-grey-orange-grey {
+    background: -webkit-gradient(linear, left top, left bottom, from(#595959), color-stop(25%, #595959), color-stop(25%, #ed6c1d), color-stop(75%, #ed6c1d), color-stop(75%, #595959), to(#595959));
     background: linear-gradient(#595959 0%, #595959 25%, #ed6c1d 25%, #ed6c1d 75%, #595959 75%, #595959 100%);
 }
 
@@ -143,6 +144,7 @@ ul.sidebar-nav li a:hover,
 ul.sidebar-nav li a.active {
     border-color: transparent;
     background-color: transparent;
+    outline: none;
 }
 
 ul.sidebar-nav li a {
@@ -666,7 +668,7 @@ a.footer-link:hover{
 
     /* home and parts pages - lower images */
     .home-imgs-row img {
-        height: 25vw;
+        height: 20vw;
     }
 
     .home-imgs-row :first-child{
@@ -781,12 +783,11 @@ a.footer-link:hover{
 
     .stripes-container {
         height: 25px;
-        top: 115px;
+        top: 116px;
     }
     
     /* home and parts pages - lower images */
     .home-imgs-row img {
-        height: 20vw;
         max-height: 500px;
     }
 }

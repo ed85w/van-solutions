@@ -1,7 +1,7 @@
 // Initialize and add the map
 function initMap() {
 
-  // The location of tinyStompers
+  // The location of van solutions
   var vanSolutions = {lat: 53.783418, lng: -1.579818};
 
   // Map options
@@ -21,13 +21,8 @@ function initMap() {
   var map = new google.maps.Map(
       document.getElementById('map'), options);
 
-  // // The icon
-  // var icon = {
-  //   url: "./img/tiny-stompers-logo-pin.png", // url
-  //   scaledSize: new google.maps.Size(40, 40), // scaled size
-// };
 
-  // The marker, positioned at tinyStompers
+  // The marker, positioned at van solutions
   var marker = new google.maps.Marker({
     position: vanSolutions, 
     map: map,
