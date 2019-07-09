@@ -2,13 +2,15 @@
 
 -<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 
 -<url>
 
-<loc>https://www.vansolutionsltd.co.uk/van-solutions/</loc>
+<loc>http://www.vansolutionsltd.co.uk/</loc>
 
-<lastmod>2019-06-27T21:43:08+00:00</lastmod>
+<lastmod>2019-07-09T17:47:55+00:00</lastmod>
 
 <priority>1.00</priority>
 
@@ -17,20 +19,9 @@
 
 -<url>
 
-<loc>https://www.vansolutionsltd.co.uk/van-solutions/index.html</loc>
+<loc>http://www.vansolutionsltd.co.uk/index.html</loc>
 
-<lastmod>2019-06-27T21:43:08+00:00</lastmod>
-
-<priority>0.80</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://www.vansolutionsltd.co.uk/van-solutions/about.html</loc>
-
-<lastmod>2019-06-27T21:43:08+00:00</lastmod>
+<lastmod>2019-07-09T17:47:55+00:00</lastmod>
 
 <priority>0.80</priority>
 
@@ -39,20 +30,9 @@
 
 -<url>
 
-<loc>https://www.vansolutionsltd.co.uk/van-solutions/service.html</loc>
+<loc>http://www.vansolutionsltd.co.uk/about.html</loc>
 
-<lastmod>2019-06-27T21:43:08+00:00</lastmod>
-
-<priority>0.80</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://www.vansolutionsltd.co.uk/van-solutions/parts.html</loc>
-
-<lastmod>2019-06-27T21:43:08+00:00</lastmod>
+<lastmod>2019-07-09T17:47:55+00:00</lastmod>
 
 <priority>0.80</priority>
 
@@ -61,9 +41,9 @@
 
 -<url>
 
-<loc>https://www.vansolutionsltd.co.uk/van-solutions/security.html</loc>
+<loc>http://www.vansolutionsltd.co.uk/service.html</loc>
 
-<lastmod>2019-06-27T21:43:08+00:00</lastmod>
+<lastmod>2019-07-09T17:47:55+00:00</lastmod>
 
 <priority>0.80</priority>
 
@@ -72,9 +52,31 @@
 
 -<url>
 
-<loc>https://www.vansolutionsltd.co.uk/van-solutions/contact.html</loc>
+<loc>http://www.vansolutionsltd.co.uk/parts.html</loc>
 
-<lastmod>2019-06-27T21:43:08+00:00</lastmod>
+<lastmod>2019-07-09T17:47:55+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
+-<url>
+
+<loc>http://www.vansolutionsltd.co.uk/security.html</loc>
+
+<lastmod>2019-07-09T17:47:55+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
+-<url>
+
+<loc>http://www.vansolutionsltd.co.uk/contact.html</loc>
+
+<lastmod>2019-07-09T17:47:55+00:00</lastmod>
 
 <priority>0.80</priority>
 
