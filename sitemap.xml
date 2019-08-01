@@ -1,85 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
--<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-
--<url>
-
-<loc>http://www.vansolutionsltd.co.uk/</loc>
-
-<lastmod>2019-07-09T17:47:55+00:00</lastmod>
-
-<priority>1.00</priority>
-
+<url>
+  <loc>https://www.vansolutionsltd.co.uk/</loc>
+  <lastmod>2019-07-10T09:13:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.vansolutionsltd.co.uk/index.html</loc>
+  <lastmod>2019-07-10T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.vansolutionsltd.co.uk/about.html</loc>
+  <lastmod>2019-07-10T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.vansolutionsltd.co.uk/service.html</loc>
+  <lastmod>2019-07-10T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.vansolutionsltd.co.uk/parts.html</loc>
+  <lastmod>2019-07-10T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.vansolutionsltd.co.uk/security.html</loc>
+  <lastmod>2019-07-10T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.vansolutionsltd.co.uk/contact.html</loc>
+  <lastmod>2019-07-10T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
-
--<url>
-
-<loc>http://www.vansolutionsltd.co.uk/index.html</loc>
-
-<lastmod>2019-07-09T17:47:55+00:00</lastmod>
-
-<priority>0.80</priority>
-
-</url>
-
-
--<url>
-
-<loc>http://www.vansolutionsltd.co.uk/about.html</loc>
-
-<lastmod>2019-07-09T17:47:55+00:00</lastmod>
-
-<priority>0.80</priority>
-
-</url>
-
-
--<url>
-
-<loc>http://www.vansolutionsltd.co.uk/service.html</loc>
-
-<lastmod>2019-07-09T17:47:55+00:00</lastmod>
-
-<priority>0.80</priority>
-
-</url>
-
-
--<url>
-
-<loc>http://www.vansolutionsltd.co.uk/parts.html</loc>
-
-<lastmod>2019-07-09T17:47:55+00:00</lastmod>
-
-<priority>0.80</priority>
-
-</url>
-
-
--<url>
-
-<loc>http://www.vansolutionsltd.co.uk/security.html</loc>
-
-<lastmod>2019-07-09T17:47:55+00:00</lastmod>
-
-<priority>0.80</priority>
-
-</url>
-
-
--<url>
-
-<loc>http://www.vansolutionsltd.co.uk/contact.html</loc>
-
-<lastmod>2019-07-09T17:47:55+00:00</lastmod>
-
-<priority>0.80</priority>
-
-</url>
 
 </urlset>
